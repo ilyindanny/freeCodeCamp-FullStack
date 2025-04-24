@@ -1,0 +1,43 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# dotenv
+.env
+.env.*
+
+# VSCode
+.vscode/
+
+# Build
+dist/
+build/
+.cache/
+.next/
+out/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Optional lockfiles (если используешь только один менеджер пакетов — оставь нужный)
+package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Misc
+*.tgz
+*.zip
+*.bak
+*.tmp
