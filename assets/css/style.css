@@ -2,8 +2,8 @@
 body {
   margin: 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: #2d2d2d;
+  color: #e6e6e6;
   line-height: 1.6;
 }
 
@@ -12,7 +12,7 @@ h1, h2, h3 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  color: #222;
+  color: #ffffff;
 }
 
 /* Code blocks */
@@ -37,12 +37,13 @@ ul {
 
 /* Links (future-proof) */
 a {
-  color: #007acc;
+  color: #4ea8de;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #82cfff;
 }
 
 .lesson-navigation {
