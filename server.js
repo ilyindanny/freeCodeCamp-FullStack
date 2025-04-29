@@ -2,6 +2,8 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
+require('./generate-lesson');
+
 const server = http.createServer((req, res) => {
     console.log(`Request for ${req.url}`);
 
@@ -26,6 +28,22 @@ const server = http.createServer((req, res) => {
 
     // Устанавливаем тип контента
     const contentType = mimeTypes[extname] || 'application/octet-stream';
+	
+	
+	// Обрабатываем запрос к /lessons.json отдельно
+if (req.url === '/lessons.json') {
+    const jsonPath = path.join(__dirname, 'lessons.json');
+    fs.readFile(jsonPath, (err, data) => {
+        if (err) {
+            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ error: 'Ошибка сервера при чтении lessons.json' }));
+        } else {
+            res.writeHead(200, { 'Content-Type': 'application/json' });
+            res.end(data);
+        }
+    });
+    return;
+}
 
     // Читаем файл и отправляем его клиенту
     fs.readFile(filePath, (error, content) => {
