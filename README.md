@@ -8,6 +8,8 @@ This repository documents my learning process with the freeCodeCamp FullStack co
 
 The goal is to create a minimal, local web app for navigating and viewing structured study content.
 
+Lessons are loaded automatically by the app; no manual configuration is required.
+
 ---
 
 ## Technologies Used
@@ -21,6 +23,10 @@ Vanilla JavaScript (no frameworks)
 Node.js static server (via Node.js Lab on iOS)
 
 ## Project Structure
+
+All course content is stored in the `content/` folder.
+
+Lessons are grouped by topic using a two-level folder structure.
 
 Each lesson folder contains:
 
@@ -47,16 +53,6 @@ content/
                 └── note/
                     └── what-is-html.html
 ```
-
-## Lessons Organization
-
-All course content is stored in the `content/` folder.
-
-Lessons are grouped by topic using a two-level folder structure.
-
-Each lesson has its own folder, with an optional `note/` subfolder for lecture notes.
-
-Lessons are loaded automatically by the app; no manual configuration is required.
 
 ## Naming Conventions
 
