@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Title and Description -->
+  <title>Lesson 01: What is HTML</title>
+  <meta name="description" content="An introduction to HTML — the standard markup language for web pages." />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1>Lesson 01: What is HTML</h1>
+    <p>Hypertext Markup Language — a way to create structured web pages with text, links, images, and more.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Paragraph Example</h2>
+      <pre><code>&lt;p&gt;Hello, World!&lt;/p&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Image Example</h2>
+      <pre><code>&lt;img src=&quot;img-url&quot; alt=&quot;description&quot;&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Link Types</h2>
+      
+      <h3>Absolute URL:</h3>
+      <ul>
+        <li>https://example.com/path/to/resource</li>
+      </ul>
+
+      <h3>Relative URL:</h3>
+      <ul>
+        <li>img/pic.jpg — relative to current folder</li>
+        <li>./img/pic.jpg — explicit current folder</li>
+        <li>../img/pic.jpg — one folder up</li>
+        <li>../../img/pic.jpg — two folders up, then into "img"</li>
+        <li>/img/pic.jpg — root-relative from server root</li>
+      </ul>
+
+    </section>
+
+  </main>
+
+  <nav class="lesson-navigation">
+    <a href="/index.html">← Home</a>
+    <a href="/path/to/previous-lesson.html">← Previous Lesson</a>
+    <a href="/path/to/next-lesson.html">Next Lesson →</a>
+  </nav>
+
+</body>
+
+</html>

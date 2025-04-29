@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Code Escaper</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+    }
+    textarea {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 20px;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML Code Escaper</h1>
+
+  <textarea id="input" placeholder="Paste your HTML code here..."></textarea>
+
+  <button onclick="convertAndCopy()">Convert & Copy</button>
+
+  <textarea id="output" readonly placeholder="Escaped code will appear here..."></textarea>
+
+  <script>
+    function escapeHTML(html) {
+      return html
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function convertAndCopy() {
+      const input = document.getElementById('input').value;
+      const escaped = escapeHTML(input);
+      const output = document.getElementById('output');
+      output.value = escaped;
+
+      navigator.clipboard.writeText(escaped).catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+    }
+  </script>
+
+</body>
+</html>
