@@ -1,4 +1,8 @@
-/* Base settings */
+/* ===== Base Styles ===== */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -7,15 +11,14 @@ body {
   line-height: 1.6;
 }
 
-/* Headers */
+/* ===== Headings ===== */
 h1, h2, h3 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 2rem;
   margin-bottom: 1rem;
   color: #ffffff;
 }
 
-/* Code blocks */
+/* ===== Code Blocks ===== */
 pre, code {
   background-color: #272822;
   color: #f8f8f2;
@@ -25,17 +28,12 @@ pre, code {
   overflow-x: auto;
 }
 
-/* Sections */
-section {
-  margin-bottom: 2rem;
-}
-
-/* Lists */
+/* ===== Lists ===== */
 ul {
   padding-left: 2rem;
 }
 
-/* Links (future-proof) */
+/* ===== Links ===== */
 a {
   color: #4ea8de;
   text-decoration: none;
@@ -46,32 +44,7 @@ a:hover {
   color: #82cfff;
 }
 
-.lesson-navigation {
-  display: flex;
-  justify-content: center;
-  gap: 1rem; /* расстояние между ссылками */
-  margin: 2rem 0; /* отступы сверху и снизу */
-}
-
-.lesson-navigation a {
-  padding: 0.5rem 1rem;
-  background-color: #0077cc;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  font-weight: bold;
-}
-
-.lesson-navigation a:hover {
-  background-color: #005fa3;
-}
-
-
-
-
-/* for buttons */
-
+/* ===== Lesson Navigation Buttons ===== */
 .lesson-navigation {
   display: flex;
   justify-content: center;
@@ -82,13 +55,13 @@ a:hover {
 .lesson-navigation a {
   padding: 0.4rem 0.8rem;
   font-size: 0.85rem;
-  border-radius: 3px;
   font-weight: 500;
+  border-radius: 3px;
   text-decoration: none;
   background-color: #3c3c3c;
   color: #dcdcdc;
-  transition: background-color 0.2s ease, color 0.2s ease;
   border: 1px solid #555;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .lesson-navigation a:hover {
@@ -97,17 +70,33 @@ a:hover {
   border-color: #777;
 }
 
-
-/* Индивидуальные цвета для кнопок (необязательно, но можно) */
-.lesson-navigation a.previous {
-  background-color: #264f78;
-}
-
-.lesson-navigation a.next {
-  background-color: #264f78;
-}
-
+/* Optional: distinct colors for nav roles */
+.lesson-navigation a.previous,
+.lesson-navigation a.next,
 .lesson-navigation a.home-page {
   background-color: #264f78;
 }
 
+/* ===== Lesson Collection Layout ===== */
+#lesson-collection {
+  margin-top: 4rem;
+  border-top: 1px solid #444;
+  padding-top: 2rem;
+}
+
+.collected-lesson {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed #555;
+}
+
+.lesson-divider {
+  margin: 4rem 0;
+  border-top: 1px solid #444;
+  opacity: 0.3;
+}
+
+/* ===== Sections ===== */
+section {
+  margin-bottom: 2rem;
+}

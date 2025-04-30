@@ -12,7 +12,7 @@
   {
     "type": "lesson",
     "title": "What is HTML",
-    "path": "/content/01-html/01-basic-html/01-what-is-html/01-what-is-html/note/01-what-is-html.html"
+    "path": "/content/01-html/01-basic-html/01-what-is-html/01-what-is-html/note/what-is-html.html"
   },
   {
     "type": "lesson",
@@ -23,6 +23,16 @@
     "type": "lesson",
     "title": "Link element",
     "path": "/content/01-html/01-basic-html/01-what-is-html/03-link/note/link.html"
+  },
+  {
+    "type": "lesson",
+    "title": "Boilerplate",
+    "path": "/content/01-html/01-basic-html/01-what-is-html/04-boilerplate/note/boilerplate.html"
+  },
+  {
+    "type": "lesson",
+    "title": "UTF-8",
+    "path": "/content/01-html/01-basic-html/01-what-is-html/05-utf/note/utf.html"
   },
   {
     "type": "topic",

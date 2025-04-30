@@ -3,7 +3,7 @@ async function renderLessons() {
     const response = await fetch('/lessons.json');
     const lessons = await response.json();
 
-    const container = document.getElementById('lesson-list');
+    const container = document.getElementById('lessons-list');
     if (!container) return;
 
     const ul = document.createElement('ul');
