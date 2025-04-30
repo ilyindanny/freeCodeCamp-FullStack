@@ -1,18 +1,42 @@
 [
   {
-    "path": "/content/01-html/01-basic-html/01-what-is-html/01-what-is-html/note/01-what-is-html.html",
-    "title": "What is HTML"
+    "type": "topic",
+    "title": "HTML",
+    "path": "/content/01-html/topic.html"
   },
   {
-    "path": "/content/01-html/01-basic-html/01-what-is-html/02-attributes/note/attributes.html",
-    "title": "HTML tag attributes"
+    "type": "subtopic",
+    "title": "Basic HTML",
+    "path": "/content/01-html/01-basic-html/subtopic.html"
   },
   {
-    "path": "/content/01-html/01-basic-html/01-what-is-html/03-link/note/link.html",
-    "title": "Document"
+    "type": "lesson",
+    "title": "What is HTML",
+    "path": "/content/01-html/01-basic-html/01-what-is-html/01-what-is-html/note/01-what-is-html.html"
   },
   {
-    "path": "/content/02-css/01-first/01-lesson/note/css.html",
-    "title": "css example"
+    "type": "lesson",
+    "title": "HTML tag attributes",
+    "path": "/content/01-html/01-basic-html/01-what-is-html/02-attributes/note/attributes.html"
+  },
+  {
+    "type": "lesson",
+    "title": "Links",
+    "path": "/content/01-html/01-basic-html/01-what-is-html/03-link/note/link.html"
+  },
+  {
+    "type": "topic",
+    "title": "CSS",
+    "path": "/content/02-css/topic.html"
+  },
+  {
+    "type": "subtopic",
+    "title": "Basic CSS",
+    "path": "/content/02-css/01-first/subtopic.html"
+  },
+  {
+    "type": "lesson",
+    "title": "css example",
+    "path": "/content/02-css/01-first/01-lesson/note/css.html"
   }
 ]
