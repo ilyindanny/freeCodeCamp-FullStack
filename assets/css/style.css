@@ -1,4 +1,4 @@
-/* ===== Base Styles ===== */
+/* ===== Base ===== */
 html {
   scroll-behavior: smooth;
 }
@@ -9,6 +9,65 @@ body {
   background-color: #2d2d2d;
   color: #e6e6e6;
   line-height: 1.6;
+  padding-top: 40px; /* для header */
+}
+
+/* ===== Header ===== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu-button {
+  color: #4ea8de;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-button:hover {
+  text-decoration: underline;
+  color: #82cfff;
+}
+
+.divider {
+  color: #999;
+  font-size: 14px;
+  user-select: none;
+}
+
+.site-title {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  flex-grow: 1;
+  text-transform: lowercase;
 }
 
 /* ===== Headings ===== */
@@ -28,11 +87,6 @@ pre, code {
   overflow-x: auto;
 }
 
-/* ===== Lists ===== */
-ul {
-  padding-left: 2rem;
-}
-
 /* ===== Links ===== */
 a {
   color: #4ea8de;
@@ -42,6 +96,35 @@ a {
 a:hover {
   text-decoration: underline;
   color: #82cfff;
+}
+
+/* ===== Lists ===== */
+ul {
+  padding-left: 2rem;
+}
+
+/* ===== Sections ===== */
+section {
+  margin-bottom: 2rem;
+}
+
+/* ===== Lesson Collection Layout ===== */
+#lesson-collection {
+  margin-top: 4rem;
+  border-top: 1px solid #444;
+  padding-top: 2rem;
+}
+
+.collected-lesson {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed #555;
+}
+
+.lesson-divider {
+  margin: 4rem 0;
+  border-top: 1px solid #444;
+  opacity: 0.3;
 }
 
 /* ===== Lesson Navigation Buttons ===== */
@@ -70,33 +153,8 @@ a:hover {
   border-color: #777;
 }
 
-/* Optional: distinct colors for nav roles */
 .lesson-navigation a.previous,
 .lesson-navigation a.next,
 .lesson-navigation a.home-page {
   background-color: #264f78;
-}
-
-/* ===== Lesson Collection Layout ===== */
-#lesson-collection {
-  margin-top: 4rem;
-  border-top: 1px solid #444;
-  padding-top: 2rem;
-}
-
-.collected-lesson {
-  margin-bottom: 4rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px dashed #555;
-}
-
-.lesson-divider {
-  margin: 4rem 0;
-  border-top: 1px solid #444;
-  opacity: 0.3;
-}
-
-/* ===== Sections ===== */
-section {
-  margin-bottom: 2rem;
 }

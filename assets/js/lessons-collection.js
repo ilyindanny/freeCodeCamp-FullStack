@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       const parser = new DOMParser();
       const doc = parser.parseFromString(text, "text/html");
 
-      const headContent = doc.querySelector("header");
-      const mainContent = item.type === "lesson" ? doc.querySelector("main") : null;
+      // Мы больше не нуждаемся в headContent
+      const mainContent = doc.querySelector("main");
 
       const section = document.createElement("section");
 
@@ -23,14 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const slug = slugify(item.title);
       section.id = `${item.type}-${slug}`;
 
-      // Вставляем header
-      if (headContent) {
-        const clonedHead = document.createElement("div");
-        clonedHead.innerHTML = headContent.innerHTML;
-        section.appendChild(clonedHead);
-      }
-
-      // Вставляем main (только для lesson)
+      // Вставляем main (если он есть)
       if (mainContent) {
         const clonedMain = document.createElement("div");
         clonedMain.innerHTML = mainContent.innerHTML;

@@ -3,36 +3,40 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.6" />
     <title>My freeCodeCamp Notes</title>
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
+    <!-- Верхняя полоска с переключением и названием -->
     <header>
-        <h1>freeCodeCamp</h1>
-        <nav>
-            <!-- Сюда можно добавить навигацию -->
-			<section>
-			<a href="/pages/lessons-collection.html">ALL ON ONE PAGE</a>
-			</section>
-        </nav>
+        <div class="header-content">
+            <span class="site-name">freeCodeCamp</span>
+            <nav>
+                <a href="/pages/lessons-collection.html" class="all-notes-link">All Notes on One Page</a>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <h2>Welcome to My freeCodeCamp Notes</h2>
-		<p></p>
-		<p>---</p>
-        <section id="lessons-list"></section>
-		<p></p>
-		<p>---</p>
-		
+        <h1>Welcome to My freeCodeCamp Notes</h1>
+        <section id="intro">
+            <h2>Welcome to My freeCodeCamp Notes</h2>
+            <p>Here you'll find all the lessons, exercises, and notes I took while going through the freeCodeCamp curriculum. You can browse through them or explore everything in a single page.</p>
+        </section>
+
+        <section id="lessons-list">
+            <!-- Здесь будет динамически подгружаться список уроков -->
+        </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Danil Ilin</p>
     </footer>
+
     <script src="assets/js/render-lessons.js"></script>
-	<script src="assets/js/lessons-collection.js"></script>
-	
+    <script src="assets/js/lessons-collection.js"></script>
 </body>
 
 </html>
