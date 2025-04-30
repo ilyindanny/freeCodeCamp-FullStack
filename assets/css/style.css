@@ -66,3 +66,48 @@ a:hover {
 .lesson-navigation a:hover {
   background-color: #005fa3;
 }
+
+
+
+
+/* for buttons */
+
+.lesson-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.lesson-navigation a {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 3px;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: #3c3c3c;
+  color: #dcdcdc;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border: 1px solid #555;
+}
+
+.lesson-navigation a:hover {
+  background-color: #505050;
+  color: #ffffff;
+  border-color: #777;
+}
+
+
+/* Индивидуальные цвета для кнопок (необязательно, но можно) */
+.lesson-navigation a.previous {
+  background-color: #264f78;
+}
+
+.lesson-navigation a.next {
+  background-color: #264f78;
+}
+
+.lesson-navigation a.home-page {
+  background-color: #264f78;
+}
+
