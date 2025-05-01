@@ -11,18 +11,18 @@
   },
   {
     "type": "lesson",
-    "title": "What is HTML",
+    "title": "What Is HTML",
     "path": "/content/01-html/01-basic-html/01-what-is-html/01-what-is-html/note/what-is-html.html"
   },
   {
     "type": "lesson",
-    "title": "HTML tag attributes",
+    "title": "HTML Tag Attributes",
     "path": "/content/01-html/01-basic-html/01-what-is-html/02-attributes/note/attributes.html"
   },
   {
     "type": "lesson",
-    "title": "Link element",
-    "path": "/content/01-html/01-basic-html/01-what-is-html/03-link/note/link.html"
+    "title": "Link Element",
+    "path": "/content/01-html/01-basic-html/01-what-is-html/03-link-element/note/link.html"
   },
   {
     "type": "lesson",
@@ -33,6 +33,26 @@
     "type": "lesson",
     "title": "UTF-8",
     "path": "/content/01-html/01-basic-html/01-what-is-html/05-utf/note/utf.html"
+  },
+  {
+    "type": "lesson",
+    "title": "Div Element",
+    "path": "/content/01-html/01-basic-html/04-html-fundamentals/01-div-element/note/div.html"
+  },
+  {
+    "type": "lesson",
+    "title": "ID Element ",
+    "path": "/content/01-html/01-basic-html/04-html-fundamentals/02-ID-element/note/id.html"
+  },
+  {
+    "type": "subtopic",
+    "title": "Semantic HTML",
+    "path": "/content/01-html/02-semantic-html/subtopic.html"
+  },
+  {
+    "type": "lesson",
+    "title": "Importance Of Semantic HTML",
+    "path": "/content/01-html/02-semantic-html/01-mportance-of-semantic-HTML/01-why-care/note/why-care.html"
   },
   {
     "type": "topic",

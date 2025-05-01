@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Title</title>
+  <title>UTF-8</title>
   <meta name="lesson-title" content="UTF-8">
-  <meta name="description" content="What is UTF" />
+  <meta name="description" content="What is UTF 8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <link rel="stylesheet" href="/assets/css/style.css" />
@@ -19,27 +19,32 @@
  	
   </header>
 
-  <main>
-  	
-	<h1>Lesson 05: What is UTF</h1>
-    <p>The_first_text</p>
+<main>
+  <h1>What is UTF-8</h1>
+  <p>
+    UTF-8, or UCS Transformation Format 8, is a standardized character encoding widely used on the web.
+  </p>
 
-    <section>
-      <h2>Example:</h2>
-      <code>&lt;p&gt;café&lt;/p&gt;</code>
-    </section>
+  <section>
+    <h2>Example:</h2>
 
-    <section>
-      <h2>Explanation</h2>
+    <p>HTML source code:</p>
+    <pre><code>&lt;p&gt;café&lt;/p&gt;</code></pre>
 
-      <h3>List</h3>
-      <ul>
-        <li>text</li>
-      </ul>
+    <p>Rendered output:</p>
+    <p><strong>café</strong></p>
+  </section>
 
-    </section>
+  <section>
+    <h2>Required &lt;meta&gt; element for UTF-8</h2>
 
-  </main>
+    <pre><code>&lt;meta charset="UTF-8"&gt;</code></pre>
+
+    <p>
+      By setting the character encoding to UTF-8, it ensures that the accented "e" character (<code>é</code>) is displayed correctly on the page.
+    </p>
+  </section>
+</main>
 
   <nav class="lesson-navigation">
     <a href="#" class="previous">← Previous</a>
