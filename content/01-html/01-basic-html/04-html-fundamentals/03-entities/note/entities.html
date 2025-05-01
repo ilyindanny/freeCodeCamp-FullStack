@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Entiries</title>
+  <meta name="lesson-title" content="HTML Entiries">
+  <meta name="description" content="What is HTML Entiries">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <a href="/index.html" class="home-page">Home</a>
+
+  </header>
+
+  <main>
+
+    <h1>HTML Entities</h1>
+    <p>
+      HTML entities are used to represent reserved characters in HTML, such as
+      <code>&lt;</code>, <code>&gt;</code>, <code>&quot;</code>, and <code>&amp;</code>.
+    </p>
+    <p>To display the following HTML code on a webpage as plain text:</p>
+    <pre><code>&lt;div class="example"&gt;Hello &amp; welcome!&lt;/div&gt;</code></pre>
+
+    <p>you need to write it in the HTML source like this:</p>
+    <pre><code>&amp;lt;div class=&amp;quot;example&amp;quot;&amp;gt;Hello &amp;amp; welcome!&amp;lt;/div&amp;gt;</code></pre>
+
+    <section>
+      <h3>Types of HTML Entities</h3>
+      <ul>
+        <li>
+          <strong>Named characters:</strong>
+          <code>&amp;lt;</code>, <code>&amp;gt;</code>, <code>&amp;quot;</code>, <code>&amp;amp;</code> and many others
+        </li>
+        <li>
+          <strong>Decimal numeric reference:</strong>
+          <code>&amp;#60;</code> — uses the Unicode decimal number of the character
+        </li>
+        <li>
+          <strong>Hexadecimal numeric reference:</strong>
+          <code>&amp;#x3C;</code> — same as above but in hexadecimal format
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <nav class="lesson-navigation">
+    <a href="#" class="previous">← Previous</a>
+    <a href="/index.html" class="home-page">Home</a>
+    <a href="#" class="next">Next →</a>
+  </nav>
+
+  <script src="/assets/js/lesson-nav.js"></script>
+
+
+
+</body>
+
+</html>
