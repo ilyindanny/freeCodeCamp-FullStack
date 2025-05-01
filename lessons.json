@@ -45,6 +45,11 @@
     "path": "/content/01-html/01-basic-html/04-html-fundamentals/02-ID-element/note/id.html"
   },
   {
+    "type": "lesson",
+    "title": "HTML Entities",
+    "path": "/content/01-html/01-basic-html/04-html-fundamentals/03-entities/note/entities.html"
+  },
+  {
     "type": "subtopic",
     "title": "Semantic HTML",
     "path": "/content/01-html/02-semantic-html/subtopic.html"
